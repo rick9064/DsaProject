@@ -1,0 +1,12 @@
+.search {
+    margin: 20px;
+  }
+  .search input, .search button {
+    padding: 10px;
+    margin: 5px;
+  }
+  .result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

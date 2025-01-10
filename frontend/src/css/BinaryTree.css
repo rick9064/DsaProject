@@ -1,0 +1,26 @@
+.binary-tree {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .binary-tree input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .binary-tree button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .results h2 {
+    margin-bottom: 10px;
+  }
+  

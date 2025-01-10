@@ -1,0 +1,12 @@
+.queue {
+    margin: 20px;
+  }
+  .queue select, .queue input, .queue button {
+    padding: 10px;
+    margin: 5px;
+  }
+  .result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
