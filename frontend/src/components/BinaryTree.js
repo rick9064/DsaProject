@@ -4,6 +4,7 @@ import '../css/BinaryTree.css';
 const BinaryTree = () => {
     const [values, setValues] = useState('');
     const [traversals, setTraversals] = useState(null);
+    const [showCode, setShowCode] = useState(false);
 
     const handleInputChange = (e) => {
         setValues(e.target.value);
@@ -26,6 +27,10 @@ const BinaryTree = () => {
         }
     };
 
+    const toggleCode = () => {
+        setShowCode(!showCode);
+    };
+
     return (
         <div className="binary-tree">
             <h1>Binary Tree Traversals</h1>
@@ -43,6 +48,51 @@ const BinaryTree = () => {
                     <p><strong>Inorder:</strong> {traversals.inorder.join(', ')}</p>
                     <p><strong>Preorder:</strong> {traversals.preorder.join(', ')}</p>
                     <p><strong>Postorder:</strong> {traversals.postorder.join(', ')}</p>
+                </div>
+            )}
+
+            <div className="algorithm-description">
+                <p>
+                    Binary Tree traversal refers to the process of visiting all the nodes in a binary tree, in a specific order. 
+                    There are three main types of binary tree traversal:
+                    <ul>
+                        <li><strong>Inorder Traversal:</strong> Left subtree → Root → Right subtree</li>
+                        <li><strong>Preorder Traversal:</strong> Root → Left subtree → Right subtree</li>
+                        <li><strong>Postorder Traversal:</strong> Left subtree → Right subtree → Root</li>
+                    </ul>
+                </p>
+            </div>
+
+            <button onClick={toggleCode} className="show-code-btn">
+                Get Algorithm Code
+            </button>
+
+            {showCode && (
+                <div className="python-code">
+                    <pre>
+                        {`
+# Inorder Traversal
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.value, end=' ')
+        inorder(root.right)
+
+# Preorder Traversal
+def preorder(root):
+    if root:
+        print(root.value, end=' ')
+        preorder(root.left)
+        preorder(root.right)
+
+# Postorder Traversal
+def postorder(root):
+    if root:
+        postorder(root.left)
+        postorder(root.right)
+        print(root.value, end=' ')
+                        `}
+                    </pre>
                 </div>
             )}
         </div>

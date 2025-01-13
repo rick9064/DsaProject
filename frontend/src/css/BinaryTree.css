@@ -1,26 +1,61 @@
+/* /frontend/src/css/BinaryTree.css */
 .binary-tree {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .binary-tree input {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .binary-tree button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .results {
-    margin-top: 20px;
-  }
-  
-  .results h2 {
-    margin-bottom: 10px;
-  }
-  
+  text-align: center;
+  margin: 20px;
+}
+
+.binary-tree input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.binary-tree button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.results h2 {
+  margin-bottom: 10px;
+}
+
+.algorithm-description {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.algorithm-description ul{
+  padding-left: 20px;
+}
+
+.show-code-btn {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.show-code-btn:hover {
+  background-color: #45a049;
+}
+
+.python-code {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+}

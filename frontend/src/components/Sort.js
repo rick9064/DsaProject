@@ -4,6 +4,7 @@ import '../css/Sort.css';
 function Sort() {
   const [array, setArray] = useState('');
   const [sortedArray, setSortedArray] = useState([]);
+  const [showCode, setShowCode] = useState(false);
 
   const handleSort = async () => {
     try {
@@ -26,6 +27,10 @@ function Sort() {
     }
   };
 
+  const toggleCode = () => {
+    setShowCode(!showCode);
+  };
+
   return (
     <div className="sort">
       <h2>Sorting Algorithm (Bubble Sort)</h2>
@@ -39,6 +44,34 @@ function Sort() {
       <div className="result">
         After Sorting: {sortedArray.length > 0 ? `[ ${sortedArray.join(', ')} ]` : '[ ]'}
       </div>
+
+      <div className="algorithm-description">
+        <p>
+          The Bubble Sort algorithm works by repeatedly stepping through the list, comparing adjacent items, and swapping them if they are in the wrong order.
+          This process continues until the list is sorted. The algorithm is called "Bubble Sort" because the largest unsorted element "bubbles" up to its correct position
+          after each pass through the list. The time complexity of Bubble Sort is O(n^2), where n is the number of elements in the array.
+        </p>
+      </div>
+
+      <button onClick={toggleCode} className="show-code-btn">
+        Get Algorithm Code
+      </button>
+
+      {showCode && (
+        <div className="python-code">
+          <pre>
+            {`
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+            `}
+          </pre>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,29 +1,53 @@
+/* /frontend/src/css/Sort.css */
 .sort {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .sort input {
-    margin: 10px;
-    padding: 10px;
-    width: 250px;
-  }
-  
-  .sort button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .sort button:hover {
-    background-color: #45a049;
-  }
-  
-  .result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
+  text-align: center;
+  margin: 20px;
+}
+
+.sort input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sort button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.algorithm-description {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.show-code-btn {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.show-code-btn:hover {
+  background-color: #45a049;
+}
+
+.python-code {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
