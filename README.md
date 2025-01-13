@@ -33,9 +33,10 @@ The **DSA Algorithm Manager** is a web application designed to help users explor
 2. Run the frontend with `npm start`.
 3. Set up the backend (Python server) and make sure it's running.
 
-(Set the environment with the command )
-Step 1:- `venv\Scripts\activate`
-Step 2:- `python app.py`
+(Set the environment with this command )
+Step 1:- `python -m venv venv`   (set the environment in backend folder)
+Step 2:- `venv\Scripts\activate`
+Step 3:- `python app.py`
 
 
 # DsaProject
